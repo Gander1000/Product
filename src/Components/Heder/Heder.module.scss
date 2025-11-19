@@ -1,0 +1,37 @@
+.Heder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 8vw;
+    background-color: #070707;
+}
+
+.contai_a_button{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    a{
+        font-size: 14px;
+        color: #ffffffc9;
+        line-height: 20px;
+        text-decoration: none;
+        font-weight: 100;
+    }
+
+    button{
+        width: 9vw;
+        height: 2.5vw;
+        font-size: 14px;
+        background-color: #7CBA72;
+        border: none;
+        border-radius: 30px;
+        transition: 0.2s;
+
+        &:hover{
+            background-color: #070707;
+            border: solid 2px #40AB7E;
+            color: #40AB7E;
+        }
+    }
+}
