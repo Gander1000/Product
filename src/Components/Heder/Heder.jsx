@@ -1,7 +1,10 @@
 import scss from "./Heder.module.scss";
 import Rectangle from "../../assets/Rectangle.svg";
+import { useState } from "react";
 
 const Heder = () => {
+  const [count, setCount] = useState(0);
+
   return (
     <section className={scss.Heder}>
       <div className={scss.contai_Logo}>
@@ -14,8 +17,13 @@ const Heder = () => {
         <a href="">About</a>
         <a href="">Blog</a>
         <a href="">Support</a>
-          <button>Sign in</button>
-          <button>Request demo</button>
+
+        <p>{count}</p>
+
+        <button onClick={() => setCount(count + 1)}>Sign in +1</button>
+        <button onClick={() => setCount(count - 1)}>Request demo -1</button>
+
+        <button onClick={() => setCount(0)}>Reset</button>
       </div>
     </section>
   );
